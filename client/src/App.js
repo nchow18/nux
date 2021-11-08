@@ -9,7 +9,9 @@ import NoMatch from './pages/NoMatch';
 import Nuxe from './pages/Nuxe';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import TopDisplay from './components/TopDisplay/TopDisplay';
 import './App.css';
+import './css/standard.css';
 
 const client = new ApolloClient({
   request: operation => {
@@ -29,7 +31,8 @@ function App() {
       <ApolloProvider client={client}>
         <Router>
           <UserProvider>
-            <div className="display-flex-column">
+            <div className="display-flex-column nuxe-colour page-font">
+              <TopDisplay />
               <Header 
               />
               <Switch>

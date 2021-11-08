@@ -1,0 +1,10 @@
+.menu-bar {
+  position: absolute;
+  right: 0;
+  top: 3rem;
+  padding-right: 3rem !important;
+}
+
+.header-container {
+  padding: 2rem !important;
+}

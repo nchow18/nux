@@ -1,0 +1,30 @@
+.display-flex-column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.page-font {
+  font-size: .8rem;
+}
+
+.padding-05rem {
+  padding: .5rem;
+}
+
+.padding-1rem {
+  padding: 1rem;
+}
+
+.top-display-container {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.display-flex-column-center-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
