@@ -11,6 +11,12 @@
   border: 1px solid var(--primary);
 }
 
+/* SECTION ONE */
+
+.section-one-container {
+  margin-bottom: 4rem;
+}
+
 .section-one-container > div > div {
   padding: .25rem;
   font-size: 18pt;
@@ -23,4 +29,109 @@
 .section-one-container > div:nth-child(2) {
   margin-top: 2rem;
   font-size: 14pt;
+}
+
+/* SECTION TWO */
+
+.section-two-container {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.section-two-container > div:nth-child(1) {
+  background-color: var(--primary);
+  color: var(--secondary);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.section-two-container > div:nth-child(1) > div {
+  padding: 1rem;
+}
+
+.section-two-container > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'lemon-milk-light';
+  font-size: 11pt;
+  color: var(--secondary);
+  letter-spacing: 1px;
+}
+
+.section-two-container > div:nth-child(2) {
+  padding: 3rem 0;
+}
+
+.section-two-container > div:nth-child(2) > div {
+  color: var(--primary);
+  margin: .25rem;
+}
+
+.section-two-container > div:nth-child(2) > div:nth-child(1) {
+  font-family: 'lemon-milk-light';
+  color: var(--tertiary) !important;
+  font-size: 10pt;
+}
+
+.section-two-container > div:nth-child(2) > div:nth-child(2) {
+  font-family: 'louis';
+  font-weight: bold;
+  font-size: 26pt;
+}
+
+.section-two-container > div:nth-child(2) > div:nth-child(3) {
+  font-family: 'louis';
+  font-weight: bold;
+  font-size: 10pt;
+  width: 24rem;
+  text-align: center;
+}
+
+.section-two-container > div:nth-child(3) > div {
+  height: 12rem;
+  width: 13rem;
+  margin: 1rem;
+  color: var(--primary);
+  font-family: 'louis';
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+.section-two-container > div:nth-child(3) > div:nth-child(1) {
+  background-color: #c4b4a7;
+}
+
+.section-two-container > div:nth-child(3) > div {
+  position: relative;
+}
+
+.section-two-container > div:nth-child(3) > div > img {
+  height: 13rem;
+  width: 13rem;
+  position: absolute;
+  top: -3.5rem;
+}
+
+.section-two-container > div:nth-child(3) > div > div {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  font-size: 10pt;
+}
+
+.section-two-container > div:nth-child(3) > div:nth-child(2) {
+  background-color: #eac898;
+}
+
+.section-two-container > div:nth-child(3) > div:nth-child(3) {
+  background-color: #e5c297
+}
+
+.section-two-container > div:nth-child(4) {
+  margin-top: 2rem;
+  padding: .25rem 2rem;
 }

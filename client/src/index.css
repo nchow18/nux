@@ -21,3 +21,8 @@ code {
   font-family: 'florence';
   src: local('florence'), url('./assets/fonts/Florence-Regular.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'lemon-milk-light';
+  src: local('lemon-milk-light'), url('./assets/fonts/lemon_milk/LEMONMILK-Light.otf') format('truetype');
+}

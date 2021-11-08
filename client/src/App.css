@@ -1,6 +1,7 @@
 :root {
   --primary: #2a2a2c;
   --secondary: #fdf0e4;
+  --tertiary: #e5c297;
 }
 
 .font-face-louis {
@@ -9,6 +10,10 @@
 
 .font-face-florence {
   font-family: 'florence';
+}
+
+.font-face-lemon {
+  font-family: 'lemon-milk-light';
 }
 
 .App {

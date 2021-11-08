@@ -6,7 +6,7 @@ import SectionThree from '../components/Home/SectionThree';
 function Nuxe() {
 
   return (
-    <div className="nuxe-container padding-1rem">
+    <div className="nuxe-container">
       <SectionOne />
       <SectionTwo />
       <SectionThree />

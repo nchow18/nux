@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './assets//fonts/louis_george_caf/Louis George Cafe.ttf';
 import './assets/fonts/Florence-Regular.ttf';
+import './assets/fonts/lemon_milk/LEMONMILK-Light.otf'
 
 ReactDOM.render(
   <React.StrictMode>
