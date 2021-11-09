@@ -55,6 +55,10 @@
   font-size: 11pt;
 }
 
+.font-size-l-xl {
+  font-size: 13pt;
+}
+
 .font-size-xl {
   font-size: 26pt;
 }
@@ -77,6 +81,10 @@
 
   .font-size-l {
     font-size: 7pt !important;
+  }
+
+  .font-size-l-xl {
+    font-size: 11pt;
   }
 
   .font-size-xl {

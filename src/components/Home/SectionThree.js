@@ -16,7 +16,7 @@ function SectionThree() {
         </div>
       </div>
       <div className="display-flex-column-center-all">
-        <div className="font-size-xl">
+        <div className="font-size-l-xl">
           HOW IT WORKS:
         </div>
         <div className="desktop-display-flex-row-top-middle">

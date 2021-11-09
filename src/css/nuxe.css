@@ -3,6 +3,15 @@
   color: var(--secondary);
   padding: .25rem .5rem !important;
   font-family: 'louis';
+  box-shadow: 2px 2px 5px rgb(0,0,0,0.2)
+}
+
+.nuxe-button-main:hover {
+  background-color: transparent;
+  color: var(--primary);
+  padding: .25rem .5rem !important;
+  font-family: 'louis';
+  border: 1px solid var(--primary);
 }
 
 .nuxe-button {
@@ -15,7 +24,7 @@
 }
 
 .nuxe-button:hover {
-  background-color: var(--secondary);
+  background-color: transparent;
   color: var(--primary);
   border: 1px solid var(--primary);
 }
