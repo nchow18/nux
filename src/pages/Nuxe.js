@@ -9,7 +9,7 @@ function Nuxe() {
   const [isNews, setNews] = useState(false)
 
   useEffect(() => {
-    setTimeout(displayNews, 4000);
+    setTimeout(displayNews, 1000);
   },[])
 
   function displayNews() {
@@ -26,8 +26,10 @@ function Nuxe() {
         <SectionThree />
       </div>
       {isNews === true && (
-        <Newsletter 
-          setNews={setNews}/>
+        <div className="popup-container">
+          <Newsletter
+            setNews={setNews}/>
+        </div>
       )}
     </>
   )

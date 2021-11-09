@@ -8,11 +8,11 @@ function Newsletter(props) {
   } = props
   
   return (
-    <div onClick={() => {setNews(false)}} className="newsletter-container">
+    <div onClick={() => {setNews(false)}} className="newsletter-container ls-15px">
       <img alt="hair-model" src={process.env.PUBLIC_URL + '/images/Home/news-hair-model.png'} />
       <div className="newsletter-info">
         <div>
-          <div>Join Our Newsletter</div>
+          <div className="ls-25px">Join Our Newsletter</div>
           <div>Sign up to receive 5% forever!</div>
         </div>
         <div>

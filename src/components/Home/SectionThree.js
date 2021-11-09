@@ -7,16 +7,16 @@ function SectionThree() {
   return (
     <div className="section-three-container display-flex-column-center-all">
       <div className="display-flex-column-center-all">
-        <div className="font-size-xxl ls-15px">Calling all Salon</div>
-        <div className="font-size-xxl ls-15px">Professionals</div>
+        <div className="font-size-xxl ls-25px">Calling all Salon</div>
+        <div className="font-size-xxl ls-25px">Professionals</div>
         <div>
-          <div>
+          <div className="ls-25px">
             Save up to 35% off entire order and so much more!
           </div>
         </div>
       </div>
       <div className="display-flex-column-center-all">
-        <div className="font-size-l-xl">
+        <div className="font-size-l-xl ls-25px">
           HOW IT WORKS:
         </div>
         <div className="desktop-display-flex-row-top-middle">

@@ -1,15 +1,24 @@
-.newsletter-container {
+.popup-container {
+  background-color: rgb(0,0,0,.8);
   position: fixed;
-  left: 0;
-  top: 0;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter-container {
   background-color: var(--news-modal);
   z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  width: 50rem;
+  height: 35rem;
   animation: NewsModal 1s forwards;
 }
 
@@ -35,9 +44,11 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  height: 100%;
+  height: 30rem;
+  widtH: 35rem;
   color: white;
-  top: 0;
+  margin-top: 50%;
+  margin-bottom: 50%;
   z-index: 4;
   text-align: center;
   font-family: 'louis';
@@ -48,11 +59,11 @@
 }
 
 .newsletter-info > div:nth-child(1) > div:nth-child(1) {
-  font-size: 34pt;
+  font-size: 28pt;
 }
 
 .newsletter-info > div:nth-child(1) > div:nth-child(2) {
-  font-size: 17pt;
+  font-size: 12pt;
 }
 
 .newsletter-info > div:nth-child(2) {
@@ -78,9 +89,10 @@
 .news-input::placeholder {
   color: white;
   font-family: 'louis';
-  font-size: 17pt;
+  font-size: 12pt;
   text-align: left;
   font-weight: bold;
+  letter-spacing: 2.5px;
 }
 
 .newsletter-info > div:nth-child(2) {
@@ -91,15 +103,15 @@
 }
 
 .news-subscribe {
-  font-size: 17pt;
+  font-size: 10pt;
   padding: 1rem;
   border: 1px solid white;
-  letter-spacing: 2px;
+  letter-spacing: 3.5px;
   background-color: rgb(255,255,255,.2);
 }
 
 .newsletter-info > div:nth-child(3) {
-  font-size: 17pt;
+  font-size: 10pt;
 }
 
 @media screen and (max-width: 600px) {
@@ -110,6 +122,10 @@
 
   .news-input {
     width: 100%;
+  }
+
+  .news-input::placeholder {
+    font-size: 6pt;
   }
 
 }

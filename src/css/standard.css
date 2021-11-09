@@ -9,6 +9,10 @@
   font-size: .8rem;
 }
 
+.font-bold {
+  font-weight: bold;
+}
+
 .padding-05rem {
   padding: .5rem;
 }
@@ -21,8 +25,17 @@
   padding: 2rem;
 }
 
+.close-x {
+  height: 1rem;
+  margin-left: 1.5rem !important;
+}
+
 .ls-15px {
-  letter-spacing: 1.5px;
+  letter-spacing: 1.5px !important;
+}
+
+.ls-25px {
+  letter-spacing: 2.5px !important;
 }
 
 .top-display-container {

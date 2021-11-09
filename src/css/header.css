@@ -6,7 +6,7 @@
 }
 
 .desktop-logo-small {
-  height: 10rem;
+  height: 7rem;
 }
 
 .header-container {
@@ -51,12 +51,16 @@
 }
 
 .menu-modal {
-  width: 50%;
+  width: 35rem;
   height: 100%;
   background-color: var(--menu-modal);
   position: absolute;
   right: 0;
   animation: HeaderModalMenu 1s forwards;
+}
+
+.menu-modal * {
+  letter-spacing: 2.5px;
 }
 
 @keyframes HeaderModalMenu {
@@ -102,6 +106,13 @@
   left: -2rem;
 }
 
+.menu-modal-top > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .menu-modal-top > div > div {
   width: 100%;
   text-align: center;
@@ -122,6 +133,7 @@
   color: #b29796;
   font-weight: bold;
   font-family: 'geomanist';
+  letter-spacing: 1.5px;
 }
 
 .menu-modal-links-right {
@@ -159,7 +171,7 @@
 @media screen and (max-width: 600px) {
 
   .desktop-logo-small {
-    height: 7rem;
+    height: 5rem;
   }
 
   .menu-bar {

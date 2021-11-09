@@ -5,8 +5,8 @@ import '../../css/standard.css';
 function Footer() {
 
   return (
-    <div className="footer-container padding-1rem display-flex-column-center-all font-size-10pt;">
-      <img alt="nuxe" className="logo-small" src={process.env.PUBLIC_URL + '/images/Home/Logo-1.png'} />
+    <div className="footer-container padding-1rem display-flex-column-center-all font-size-10px ls-25px">
+      {/* <img alt="nuxe" className="logo-small" src={process.env.PUBLIC_URL + '/images/Home/Logo-1.png'} /> */}
       <div className="display-flex-row-center-all footer-bar-menu font-size-l">
         <div className="border-right">ABOUT US</div>
         <div className="border-right">FAQs</div>
@@ -14,7 +14,7 @@ function Footer() {
         <div className="border-right">REGISTER</div>
         <div>SHIPPING</div>
       </div>
-      <div className="desktop-display-flex-row-top-middle footer-navigation ls-15px font-size-l">
+      <div className="desktop-display-flex-row-top-middle footer-navigation ls-25px font-size-l">
         <div className="desktop-footer-border-right footer-contact desktop-display-flex-column-top-middle">
           <div>CONTACT</div>
           <div>EMAIL ICON</div>

@@ -7,7 +7,7 @@ function MenuModal(props) {
   } = props
   
   return (
-    <div className="menu-modal">
+    <div className="menu-modal ls-25px">
       <div>
         <div className="menu-modal-top">
           <div>
@@ -19,7 +19,8 @@ function MenuModal(props) {
             </div>
           </div>
           <div onClick={() => {setModal(false)}}>
-            CLOSE
+            <div>CLOSE</div> 
+            <img className="close-x" alt="close" src={process.env.PUBLIC_URL + '/images/Home/close.png'} />
           </div>
         </div>
         <div className="menu-modal-content">
