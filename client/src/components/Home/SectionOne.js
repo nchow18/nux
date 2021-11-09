@@ -10,7 +10,7 @@ function SectionOne() {
         <div className="font-face-florence">- luxurious -</div>
         <div className="font-face-louis">nuxe.</div>
       </div>
-      <div className="nuxe-button">
+      <div className="nuxe-button-main">
         Shop our collection
       </div>
     </div>

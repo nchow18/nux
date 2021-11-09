@@ -1,8 +1,16 @@
+.nuxe-button-main {
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding: .25rem .5rem !important;
+  font-family: 'louis';
+}
+
 .nuxe-button {
   background-color: var(--primary);
   color: var(--secondary);
-  padding: .25rem .5rem;
+  padding: .25rem 2rem !important;
   font-family: 'louis';
+  font-size: 14pt;
 }
 
 .nuxe-button:hover {
@@ -134,4 +142,98 @@
 .section-two-container > div:nth-child(4) {
   margin-top: 2rem;
   padding: .25rem 2rem;
+}
+
+/* SECTION THREE */
+
+
+.section-three-container > div:nth-child(1) {
+  background-color: var(--primary);
+  color: var(--secondary);
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.section-three-container > div:nth-child(1) > div:nth-child(1) {
+  font-size: 37pt;
+  font-family: 'louis';
+  font-weight: bold;
+}
+
+.section-three-container > div:nth-child(1) > div:nth-child(2) {
+  font-size: 37pt;
+  font-family: 'louis';
+  font-weight: bold;
+}
+
+.section-three-container > div:nth-child(1) > div:nth-child(3) {
+  font-size: 11pt;
+  font-family: 'louis';
+  font-weight: bold;
+  margin-top: 1.5rem;
+  letter-spacing: 1.5px;
+}
+
+.section-three-container > div:nth-child(2) {
+  margin: 3rem 0;
+}
+
+.section-three-container > div:nth-child(2) > div:nth-child(2) {
+  margin-top: 4rem;
+}
+
+.section-three-container > div:nth-child(2) > div:nth-child(2) > div {
+  width: 10rem;
+  height: 10rem;
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.section-three-container > div:nth-child(2) > div:nth-child(2) > div > div {
+  margin: .5rem;
+  font-family: 'louis';
+  font-size: 13pt;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.section-three-container > div:nth-child(2) > div:nth-child(2) > div > img:nth-child(1) {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: -3rem;
+  left: -1rem;
+}
+
+.section-three-container > div:nth-child(2) > div:nth-child(2) > div > img:nth-child(2) {
+  width: 6rem;
+  height: 6rem;
+}
+
+.section-three-container > div:nth-child(3) {
+  margin-top: 3rem;
+}
+
+.section-three-container > div:nth-child(4) {
+  width: 100%;
+  background-color: var(--tertiary);
+  color: var(--primary);
+  padding: 2rem 0;
+}
+
+.section-three-container > div:nth-child(4) > div {
+  margin: .5rem;
+}
+
+.section-three-container > div:nth-child(4) > div:nth-child(1) {
+  font-family: 'louis';
+  font-size: 19pt;
+}
+
+.section-three-container > div:nth-child(4) > div:nth-child(2) {
+  font-family: 'louis';
+  font-size: 12pt;
 }

@@ -17,6 +17,10 @@
   padding: 1rem;
 }
 
+.padding-2rem {
+  padding: 2rem;
+}
+
 .top-display-container {
   background-color: var(--primary);
   color: var(--secondary);
@@ -34,4 +38,15 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.desktop-display-flex-row-top-middle {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: start !important;
+}
+
+.margin-h-4rem {
+  margin: 4rem 0rem;
 }
