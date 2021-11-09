@@ -3,7 +3,9 @@
   color: var(--secondary);
   padding: .25rem .5rem !important;
   font-family: 'louis';
-  box-shadow: 2px 2px 5px rgb(0,0,0,0.2)
+  box-shadow: 2px 2px 5px rgb(0,0,0,0.2);
+  margin: 1rem;
+  border: 1px solid var(--primary);
 }
 
 .nuxe-button-main:hover {
@@ -11,7 +13,6 @@
   color: var(--primary);
   padding: .25rem .5rem !important;
   font-family: 'louis';
-  border: 1px solid var(--primary);
 }
 
 .nuxe-button {
@@ -21,12 +22,12 @@
   font-family: 'louis';
   font-size: 14pt;
   box-shadow: 2px 2px 5px rgb(0,0,0,0.2);
+  border: 1px solid var(--primary);
 }
 
 .nuxe-button:hover {
   background-color: transparent;
   color: var(--primary);
-  border: 1px solid var(--primary);
 }
 
 /* SECTION ONE */
