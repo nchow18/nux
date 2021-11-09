@@ -5,8 +5,6 @@ function MenuBar() {
 
   const [isModal, setModal] = useState(false);
 
-  console.log(isModal);
-  
   return (
     <>
       <div className="menu-bar-container">
