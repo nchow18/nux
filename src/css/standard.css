@@ -50,3 +50,41 @@
 .margin-h-4rem {
   margin: 4rem 0rem;
 }
+
+.font-size-l {
+  font-size: 11pt;
+}
+
+.font-size-xl {
+  font-size: 26pt;
+}
+
+.font-size-xxl {
+  font-size: 37pt !important;
+}
+
+@media screen and (max-width: 600px) {
+
+  .desktop-display-flex-row-center-all {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .desktop-display-flex-row-top-middle {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .font-size-l {
+    font-size: 7pt !important;
+  }
+
+  .font-size-xl {
+    font-size: 16pt !important;
+  }
+
+  .font-size-xxl {
+    font-size: 26pt !important;
+  }
+
+}

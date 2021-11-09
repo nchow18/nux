@@ -4,7 +4,7 @@ function SectionTwo() {
 
   return (
     <div className="section-two-container display-flex-column-center-all">
-      <div>
+      <div className="font-size-l">
         <div>
           <div>USA-MADE</div> 
           <div>ADHESIVE</div>
@@ -24,7 +24,7 @@ function SectionTwo() {
       </div>
       <div className="display-flex-column-center-all">
         <div>DISCOVER OUR NEWEST TAPE INS</div>
-        <div>Soft, Silky and Seamless</div>
+        <div className="font-size-xl">Soft, Silky and Seamless</div>
         <div>Create a flawless look with our seamless tape-ins that will blend naturally with your hair.</div>
       </div>
       <div className="desktop-display-flex-row-center-all">
