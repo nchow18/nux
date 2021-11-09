@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import './assets//fonts/louis_george_caf/Louis George Cafe.ttf';
 import './assets/fonts/Florence-Regular.ttf';
 import './assets/fonts/lemon_milk/LEMONMILK-Light.otf'
+import './assets/fonts/Raleway/static/Raleway-Regular.ttf';
+import './assets/fonts/Geomanist/Desktop/Geomanist-Regular.otf';
 
 ReactDOM.render(
   <React.StrictMode>

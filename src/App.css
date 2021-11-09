@@ -3,6 +3,7 @@
   --secondary: #fdf0e4;
   --tertiary: #e5c297;
   --light-font: #454545;
+  --menu-modal: rgb(255, 241, 233);
 }
 
 .font-face-louis {
@@ -15,6 +16,14 @@
 
 .font-face-lemon {
   font-family: 'lemon-milk-light';
+}
+
+.font-face-raleway {
+  font-family: 'raleway';
+}
+
+.font-face-geomanist {
+  font-family: 'geomanist';
 }
 
 .App {

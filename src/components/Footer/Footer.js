@@ -5,7 +5,7 @@ import '../../css/standard.css';
 function Footer() {
 
   return (
-    <div className="footer-container padding-1rem display-flex-column-center-all">
+    <div className="footer-container padding-1rem display-flex-column-center-all font-size-10pt;">
       <img alt="nuxe" className="logo-small" src={process.env.PUBLIC_URL + '/images/Home/Logo-1.png'} />
       <div className="display-flex-row-center-all footer-bar-menu font-size-l">
         <div className="border-right">ABOUT US</div>

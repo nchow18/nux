@@ -26,3 +26,13 @@ code {
   font-family: 'lemon-milk-light';
   src: local('lemon-milk-light'), url('./assets/fonts/lemon_milk/LEMONMILK-Light.otf') format('truetype');
 }
+
+@font-face {
+  font-family: 'raleway';
+  src: local('raleway'), url('./assets/fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'geomanist';
+  src: local('geomanist'), url('./assets/fonts/Geomanist/Desktop/Geomanist-Regular.otf') format('truetype');
+}

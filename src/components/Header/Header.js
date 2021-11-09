@@ -6,15 +6,10 @@ function Header() {
 
   return (
     <div className="header-container padding-1rem">
-      <div className="display-flex-column-center-all">
-        <div>
-          nuxe
-        </div>
-        <div>
-          EXTENSION BAR
-        </div>
+      <div className="desktop-display-flex-row-center-all">
+        <img className="desktop-logo-small opacity-0" alt="nuxe-logo" src={process.env.PUBLIC_URL + '/images/Home/Logo-1.png'} />
       </div>
-      <div className="menu-bar padding-1rem">
+      <div className="menu-bar">
         <MenuBar />
       </div>
     </div>

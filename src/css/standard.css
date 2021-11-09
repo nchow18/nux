@@ -55,15 +55,15 @@
 .desktop-display-flex-row-top-middle {
   display: flex !important;
   flex-direction: row !important;
-  align-items: start !important;
-  justify-content: start !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
 }
 
 .desktop-display-flex-column-top-middle {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
-  justify-content: start !important;
+  justify-content: flex-start !important;
   height: 100%;
 }
 
@@ -73,6 +73,14 @@
 
 .margin-h-4rem {
   margin: 4rem 0rem;
+}
+
+.opacity-0 {
+  opacity: 100% !important;
+}
+
+.font-size-10pt {
+  font-size: 10pt;
 }
 
 .font-size-l {
@@ -125,6 +133,10 @@
 
   .font-size-xxl {
     font-size: 26pt !important;
+  }
+
+  .font-size-10pt {
+    font-size: 10pt !important;
   }
 
 }

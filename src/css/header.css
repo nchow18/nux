@@ -1,10 +1,197 @@
 .menu-bar {
   position: absolute;
   right: 0;
-  top: 3rem;
+  top: 4rem;
   padding-right: 3rem !important;
+}
+
+.desktop-logo-small {
+  height: 10rem;
 }
 
 .header-container {
   padding: 2rem !important;
+}
+
+.menu-bar-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-bar-container * {
+  padding: 1rem;
+}
+
+.icon-small {
+  height: 1rem;
+}
+
+.menu-border-right {
+  border-right: 1px solid gray;
+}
+
+.header-modal {
+  width: 100vw;
+  height: 100%;
+  background-color: rgb(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  animation: HeaderModalBlack 1s forwards;
+}
+
+@keyframes HeaderModalBlack {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+.menu-modal {
+  width: 50%;
+  height: 100%;
+  background-color: var(--menu-modal);
+  position: absolute;
+  right: 0;
+  animation: HeaderModalMenu 1s forwards;
+}
+
+@keyframes HeaderModalMenu {
+  from {
+    opacity: 100;
+    transform: translateX(50vw)
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+.menu-modal > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  padding: 5rem;
+  margin-top: 5rem;
+}
+
+.menu-modal-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-family: 'raleway';
+  font-size: 9pt;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+.menu-modal-top > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu-modal-top > div:nth-child(1) > div {
+  padding: 0 2rem;
+  position: relative;
+  left: -2rem;
+}
+
+.menu-modal-top > div > div {
+  width: 100%;
+  text-align: center;
+}
+
+.menu-modal-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.menu-modal-links-left > div {
+  padding: 1rem 0;
+  font-size: 14pt;
+  color: #b29796;
+  font-weight: bold;
+  font-family: 'geomanist';
+}
+
+.menu-modal-links-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  height: 100%;
+  font-family: 'raleway';
+  opacity: 52%;
+  font-size: 8pt;
+  letter-spacing: 1.5px;
+}
+
+.menu-modal-legal {
+  margin-bottom: 2rem;
+}
+
+.menu-modal-legal > div {
+  margin-bottom: .5rem;
+}
+
+.menu-modal-social {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-top: 1px solid gray;
+  padding-top: 2rem;
+  width: 7rem;
+}
+
+.menu-modal-social > div {
+  margin-right: 2.5rem;
+}
+
+@media screen and (max-width: 600px) {
+
+  .desktop-logo-small {
+    height: 7rem;
+  }
+
+  .menu-bar {
+    position: relative;
+    top: 0rem;
+    padding-right: 0rem !important;
+  }
+
+  .menu-bar-container {
+    justify-content: center;
+  }
+
+  .menu-modal {
+    width: 90%
+  }
+
+  .menu-modal > div {
+    padding: 1rem;
+  }
+
+  .menu-modal-content {
+    flex-direction: column;
+  }
+
+  .menu-modal-links-left {
+    border-bottom: 1px solid gray;
+    padding-bottom: 1rem;
+    width: 7rem;
+  }
+
+  .menu-modal-links-right {
+    margin-top: 2rem;
+  }
+
 }
