@@ -21,6 +21,10 @@
   padding: 2rem;
 }
 
+.ls-15px {
+  letter-spacing: 1.5px;
+}
+
 .top-display-container {
   background-color: var(--primary);
   color: var(--secondary);
@@ -33,6 +37,14 @@
   justify-content: center;
 }
 
+.display-flex-row-center-all {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+}
+
 .desktop-display-flex-row-center-all {
   display: flex;
   flex-direction: row;
@@ -43,8 +55,20 @@
 .desktop-display-flex-row-top-middle {
   display: flex !important;
   flex-direction: row !important;
+  align-items: start !important;
+  justify-content: start !important;
+}
+
+.desktop-display-flex-column-top-middle {
+  display: flex !important;
+  flex-direction: column !important;
   align-items: center !important;
   justify-content: start !important;
+  height: 100%;
+}
+
+.border-right {
+  border-right: 1px solid #c1ac9e;
 }
 
 .margin-h-4rem {
@@ -79,12 +103,20 @@
     flex-direction: column !important;
   }
 
+  .desktop-display-flex-row-top-middle {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100%;
+  }
+
   .font-size-l {
     font-size: 7pt !important;
   }
 
   .font-size-l-xl {
-    font-size: 11pt;
+    font-size: 13pt;
   }
 
   .font-size-xl {
