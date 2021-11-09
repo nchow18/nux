@@ -12,9 +12,10 @@
     "concurrently": "^6.1.0"
   },
   "scripts": {
-    "start": "npm start",
-    "install": "cd client && npm i",
-    "heroku-postbuild": "npm run build"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
