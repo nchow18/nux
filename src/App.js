@@ -8,6 +8,7 @@ import Nuxe from './pages/Nuxe';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import TopDisplay from './components/TopDisplay/TopDisplay';
+import Products from './pages/Products';
 import './App.css';
 import './css/standard.css';
 
@@ -25,6 +26,7 @@ function App() {
                   render={() => <Nuxe 
                   />}
                   />
+                <Route exact path='/products' render={() => <Products />} />
                 <Route component={NoMatch} />
               </Switch>
               <Footer 

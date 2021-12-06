@@ -16,8 +16,6 @@ function Nuxe() {
     setNews(true)
   }
 
-  console.log(isNews);
-
   return (
     <>
       <div className="nuxe-container">
