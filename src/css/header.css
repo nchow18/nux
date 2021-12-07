@@ -6,7 +6,7 @@
 }
 
 .desktop-logo-small {
-  height: 7rem;
+  height: 4rem;
 }
 
 .header-container {
@@ -37,7 +37,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 10;
   animation: HeaderModalBlack 1s forwards;
 }
 

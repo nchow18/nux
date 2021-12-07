@@ -1,26 +1,38 @@
 import React, { useState, useEffect } from 'react';
-import Data from '../services/service';
+import { NavLink } from 'react-router-dom';
 import Axios from 'axios';
 
-function Products() {
+function Products(props) {
 
-  const [isData, setData] = useState([])
+  const {
+    setCategory,
+    categories
+  } = props
 
-  const url = window.location.href.replace('0/products','1')
-
-  useEffect(() => {
-    Axios.get(`${url}/api/products`).then((data) => {setData(data.data)
-    })
-  },[])
-
-  console.log(isData[0]);
-
-  console.log(window.location.href.replace('products',''))
+  function adjustCategoryName(name) {
+    const new_name = name.replace('_Tape-In', ' ')
+    return new_name;
+  }
 
   return (
-    <>
-      Products
-    </>
+    <div className="products-container">
+      <div className="products-title-container">
+        <div className="products-title-name">Tape In Extensions</div>
+        <div className="product-title-bar"></div>
+      </div>
+      <div className="category-container">
+        {categories.map((cat) => (
+          <NavLink style={{ textDecoration: 'none'}} key={cat} onClick={() => {setCategory((cat.replace('-','_').toLowerCase()))}} to={`/products/${cat.replace('-','_').toLowerCase()}`}>
+            <div className="category-column">
+              <img alt="category" src={process.env.PUBLIC_URL + `/images/Products/${cat}.png`} />
+              <div className="category-block"></div>
+              <div className="category-name">{adjustCategoryName(cat)}</div>
+            </div>
+          </NavLink>
+        ))}
+      </div>
+
+    </div>
   )
 }
 

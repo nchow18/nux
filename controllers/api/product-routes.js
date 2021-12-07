@@ -12,7 +12,23 @@ router.get('/', (req, res) => {
       'id',
       'category',
       'details',
-      'colors'
+      'colors',
+      'Jet_Black',
+      'Natural_Black',
+      'Darkest_Brown',
+      'Chocolate_Brown',
+      'Chestnut_Brown',
+      'Medium_Brown',
+      'Ash_Blonde',
+      'Light_Ash_Blonde',
+      'Honey_Blonde',
+      'Medium_Auburn',
+      'Dark_Auburn',
+      'Platinum_Blonde',
+      'Bleach_Blonde',
+      'Plum_Red',
+      'Dark_Wine',
+      'Smokey_Grey'
     ]
   })
   .then(dbProductData => res.json(dbProductData))
@@ -33,7 +49,23 @@ router.get('/:id', (req, res) => {
       'id',
       'category',
       'details',
-      'colors'
+      'colors',
+      'Jet_Black',
+      'Natural_Black',
+      'Darkest_Brown',
+      'Chocolate_Brown',
+      'Chestnut_Brown',
+      'Medium_Brown',
+      'Ash_Blonde',
+      'Light_Ash_Blonde',
+      'Honey_Blonde',
+      'Medium_Auburn',
+      'Dark_Auburn',
+      'Platinum_Blonde',
+      'Bleach_Blonde',
+      'Plum_Red',
+      'Dark_Wine',
+      'Smokey_Grey'
     ],
   })
   .then(dbProductData => {
