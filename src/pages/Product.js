@@ -7,20 +7,21 @@ function Product(props) {
     isCategory,
     setCategory,
     productArr,
-    colors
+    colors,
+    isColorArr,
+    setColorArr,
+    isInitialPrice,
+    isCart,
+    setCart
   } = props
 
-  const [isColor, setColor] = useState(colors[0]);
   const [isColorCode, setColorCode] = useState()
-  const [isLength, setLength] = useState('Length_18');
+  const [isColor, setColor] = useState('Jet_Black-(1)')
+  const [isLength, setLength] = useState('length_18');
   const [isQty, setQty] = useState(1)
-  const [isProd, setProd] = useState([])
-  const [isPrice, setPrice] = useState();
-  const [catArr, setCatArr] = useState()
+  const [isPrice, setPrice] = useState(isInitialPrice);
   const categoryURL = window.location.href.split('/products/')
   const category = categoryURL[1]
-
-  var product = [];
 
   useEffect(() => {
 
@@ -36,13 +37,9 @@ function Product(props) {
       }
     }
 
-    sortColor()
+    setPrice(isInitialPrice);
 
-  },[])
-
-  // window.onload = function() {
-  //   sortColor()
-  // }
+  },[isInitialPrice])
 
   function colorFullName(name) {
     let removeUnderScore = name.replace("_", " ");
@@ -79,7 +76,7 @@ function Product(props) {
 
     if (isQty >= 1) {
       setQty(isQty + 1)
-      setPrice(productArr[isColorCode].length_18 * (isQty + 1))
+      setPrice(isColorArr[isLength] * (isQty + 1))
     }
 
   }
@@ -87,9 +84,26 @@ function Product(props) {
   function minusQty() {
     if (isQty !== 1) {
       setQty(isQty - 1)
-      setPrice(productArr[isColorCode].length_18 * (isQty - 1))
+      setPrice(isColorArr[isLength] * (isQty - 1))
     }
   }
+
+  function addCart(amount) {
+
+    var updateCart = [];
+    const addToCart = {
+      category: category.replaceAll('_', ' ').toUpperCase(),
+      price: (isColorArr[isLength] * amount),
+      color: colorFullName(isColor),
+      quantity: amount
+    }
+
+    updateCart = [...isCart, addToCart]
+
+    setCart(updateCart)
+  }
+
+  console.log(isCart);
 
   return (
     <div className="product-container">
@@ -112,6 +126,23 @@ function Product(props) {
             <div className="product-quantity-button">Add to Cart</div>
           </div>
           <div className="product-or">or</div>
+          <div className="product-left-bottom-container">
+            <div className="product-price-weight letter-spacing-1px">RECOMMENDED AMOUNT</div>
+            <div className="product-default-options">
+              <div className="product-option-1">
+                <p>THIN HAIR: </p>
+                <div onClick={() => {addCart(3)}}>Add 3 packs to cart</div>
+              </div>
+              <div className="product-option-1">
+                <p>MEDIUM HAIR: </p>
+                <div onClick={() => {addCart(4)}}>Add 4 packs to cart</div>
+              </div>
+              <div className="product-option-1">
+                <p>THICK HAIR: </p>
+                <div onClick={() => {addCart(5)}}>Add 5 packs to cart</div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="product-image">IMAGE</div>
         <div className="product-menu">MENU</div>

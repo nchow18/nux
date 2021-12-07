@@ -15,7 +15,14 @@ function App() {
 
   const [productArr, setProductArr] = useState([])
   const [isCategory, setCategory] = useState()
+  const [isClassicColor, setClassicColor] = useState()
+  const [isInvisibleColor, setInvisibleColor] = useState();
+  const [isSeamlessColor, setSeamlessColor] = useState();
   const [catArr, setCatArr] = useState([])
+  const [isCart, setCart] = useState([])
+  const [isInitialPrice, setInitialPrice] = useState()
+  const categoryURL = window.location.href.split('/products/')
+  const category = categoryURL[1]
   const categories = [
     'Classic_Tape-In',
     'Invisible_Tape-In',
@@ -26,8 +33,20 @@ function App() {
 
     Axios.get(`http://localhost:3001/api/products`).then((data) => {parseProductArr(data.data)})
 
-  },[])
+    setCat()
 
+    function setCat() {
+      if (category === 'classic_tape_in') {
+        setCategory('classic_tape_in') 
+      } else if (category === 'invisible_tape_in') {
+        setCategory('invisible_tape_in')
+      } else if (category === 'seamless_tape_in') {
+        setCategory('seamless_tape_in')
+      }
+    }
+
+  },[])
+  
   const colors = 
     [
       "Jet_Black-(1)","Natural_Black-(1B)","Darkest_Brown-(2)","Chocolate_Brown-(4)","Chestnut_Brown-(6)","Medium_Brown-(8)","Ash_Blonde-(18)","Light_Ash_Blonde-(22)","Honey_Blonde-(27)","Medium_Auburn-(30)","Dark_Auburn-(33)","Platinum_Blonde-(60)","Bleach_Blonde-(613)","Plum_Red-(530)","Dark_Wine-(99J)","Smokey_Grey-(SG)"
@@ -56,7 +75,21 @@ function App() {
       arr.Dark_Wine = JSON.parse(arr.Dark_Wine);
       arr.Smokey_Grey = JSON.parse(arr.Smokey_Grey);
     }
-    setProductArr(data);
+
+    const setData = data || {};
+    setProductArr(setData);
+    setClassicColor(setData[0].Jet_Black)
+    setSeamlessColor(setData[1].Jet_Black)
+    setInvisibleColor((setData[2].Jet_Black))
+
+    if (category === 'classic_tape_in') {
+      setInitialPrice(setData[0].Jet_Black.length_18)
+    } else if (category === 'seamless_tape_in') {
+      setInitialPrice(setData[1].Jet_Black.length_18)
+    } else if (category === 'invisible_tape_in') {
+      setInitialPrice(setData[2].Jet_Black.length_18)
+    }
+
   }
 
   return (
@@ -81,23 +114,29 @@ function App() {
                   isCategory={isCategory}
                   setCategory={setCategory}
                   colors={colors}
-                  productArr={productArr[0]}
-                  setCatArr={setCatArr}
-                  catArr={catArr} />} />
+                  isColorArr={isClassicColor}
+                  setColorArr={setClassicColor}
+                  isInitialPrice={isInitialPrice}
+                  isCart={isCart}
+                  setCart={setCart} />} />
                 <Route exact path={`/products/seamless_tape_in`} render={() => <Product
                   isCategory={isCategory}
                   setCategory={setCategory}
-                  colors={colors}
-                  productArr={productArr[1]}
-                  setCatArr={setCatArr}
-                  catArr={catArr} />} />  
+                  colors={colors} />}
+                  isColorArr={isSeamlessColor}
+                  setColorArr={setSeamlessColor}
+                  isInitialPrice={isInitialPrice}
+                  isCart={isCart}
+                  setCart={setCart} />  
                 <Route exact path={`/products/invisible_tape_in`} render={() => <Product
                   isCategory={isCategory}
                   setCategory={setCategory}
                   colors={colors}
-                  productArr={productArr[2]}
-                  setCatArr={setCatArr}
-                  catArr={catArr} />} />                                                        
+                  isColorArr={isInvisibleColor}
+                  setColorArr={setInvisibleColor}
+                  isInitialPrice={isInitialPrice}
+                  isCart={isCart}
+                  setCart={setCart} />} />                                                        
                 <Route component={NoMatch} />
               </Switch>
               <Footer 
