@@ -25,13 +25,13 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: true }));
 // app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, './build/index.html')));
+app.use(express.static(path.join(__dirname, './public/index.html')));
 
 //turn on routes
 app.use(routes);
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, './build/index.html'));
+  res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
 // turn on connection to db and server
