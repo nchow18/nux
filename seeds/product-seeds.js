@@ -58,17 +58,17 @@ const productData = [
     Darkest_Brown: '{"length_18":"155.50","length_20":"165.50","length_22":"175.50","length_24":"185.50","length_26":"195.50"}',
     Chocolate_Brown: '{"length_18":"155.50","length_20":"165.50","length_22":"175.50","length_24":"185.50","length_26":"195.50"}',
     Chestnut_Brown: '{"length_18":"155.50","length_20":"165.50","length_22":"175.50","length_24":"185.50","length_26":"195.50"}',
-    Medium_Brown: '{"length_18":"155.50","length_20":"165.50","length_22":"175.50","length_24":"185.50","length_26":"195.50"}',
-    Ash_Blonde: '{"length_18":"155.50","length_20":"165.50","length_22":"175.50","length_24":"185.50","length_26":"195.50"}',
-    Light_Ash_Blonde: '{"length_18":"155.50","length_20":"165.50","length_22":"175.50","length_24":"185.50","length_26":"195.50"}',
-    Honey_Blonde: '{"length_18":"155.50","length_20":"165.50","length_22":"175.50","length_24":"185.50","length_26":"195.50"}',
-    Medium_Auburn: '{"length_18":"155.50","length_20":"165.50","length_22":"175.50","length_24":"185.50","length_26":"195.50"}',
-    Dark_Auburn: '{"length_18":"155.50","length_20":"165.50","length_22":"175.50","length_24":"185.50","length_26":"195.50"}',
-    Platinum_Blonde: '{"length_18":"155.50","length_20":"165.50","length_22":"175.50","length_24":"185.50","length_26":"195.50"}',
-    Bleach_Blonde: '{"length_18":"155.50","length_20":"165.50","length_22":"175.50","length_24":"185.50","length_26":"195.50"}',
-    Plum_Red: '{"length_18":"155.50","length_20":"165.50","length_22":"175.50","length_24":"185.50","length_26":"195.50"}',
-    Dark_Wine: '{"length_18":"155.50","length_20":"165.50","length_22":"175.50","length_24":"185.50","length_26":"195.50"}',
-    Smokey_Grey: '{"length_18":"155.50","length_20":"165.50","length_22":"175.50","length_24":"185.50","length_26":"195.50"}'
+    Medium_Brown: '{"length_18":"163.50","length_20":"173.50","length_22":"183.50","length_24":"193.50","length_26":"203.50"}',
+    Ash_Blonde: '{"length_18":"163.50","length_20":"173.50","length_22":"183.50","length_24":"193.50","length_26":"203.50"}',
+    Light_Ash_Blonde: '{"length_18":"163.50","length_20":"173.50","length_22":"183.50","length_24":"193.50","length_26":"203.50"}',
+    Honey_Blonde: '{"length_18":"163.50","length_20":"173.50","length_22":"183.50","length_24":"193.50","length_26":"203.50"}',
+    Medium_Auburn: '{"length_18":"163.50","length_20":"173.50","length_22":"183.50","length_24":"193.50","length_26":"203.50"}',
+    Dark_Auburn: '{"length_18":"163.50","length_20":"173.50","length_22":"183.50","length_24":"193.50","length_26":"203.50"}',
+    Platinum_Blonde: '{"length_18":"163.50","length_20":"173.50","length_22":"183.50","length_24":"193.50","length_26":"203.50"}',
+    Bleach_Blonde: '{"length_18":"163.50","length_20":"173.50","length_22":"183.50","length_24":"193.50","length_26":"203.50"}',
+    Plum_Red: '{"length_18":"163.50","length_20":"173.50","length_22":"183.50","length_24":"193.50","length_26":"203.50"}',
+    Dark_Wine: '{"length_18":"163.50","length_20":"173.50","length_22":"183.50","length_24":"193.50","length_26":"203.50"}',
+    Smokey_Grey: '{"length_18":"163.50","length_20":"173.50","length_22":"183.50","length_24":"193.50","length_26":"203.50"}',
   }
   
 ];

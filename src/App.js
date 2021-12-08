@@ -79,17 +79,19 @@ function App() {
     const setData = data || {};
     setProductArr(setData);
     setClassicColor(setData[0].Jet_Black)
-    setSeamlessColor(setData[1].Jet_Black)
-    setInvisibleColor((setData[2].Jet_Black))
+    setInvisibleColor((setData[1].Jet_Black))
+    setSeamlessColor(setData[2].Jet_Black)
 
     if (category === 'classic_tape_in') {
+      setCategory('classic_tape_in')
       setInitialPrice(setData[0].Jet_Black.length_18)
-    } else if (category === 'seamless_tape_in') {
-      setInitialPrice(setData[1].Jet_Black.length_18)
     } else if (category === 'invisible_tape_in') {
+      setCategory('invisible_tape_in')
+      setInitialPrice(setData[1].Jet_Black.length_18)
+    } else if (category === 'seamless_tape_in') {
+      setCategory('seamless_tape_in')
       setInitialPrice(setData[2].Jet_Black.length_18)
-    }
-
+    } 
   }
 
   return (
@@ -109,7 +111,10 @@ function App() {
                   setProductArr={setProductArr}
                   isCategory={isCategory}
                   setCategory={setCategory}
-                  categories={categories} />} />
+                  categories={categories}
+                  setInitialPrice={setInitialPrice}
+                  isInitialPrice={isInitialPrice}
+                   />} />
                 <Route exact path={`/products/classic_tape_in`} render={() => <Product
                   isCategory={isCategory}
                   setCategory={setCategory}
@@ -117,17 +122,9 @@ function App() {
                   isColorArr={isClassicColor}
                   setColorArr={setClassicColor}
                   isInitialPrice={isInitialPrice}
+                  productArr={productArr}
                   isCart={isCart}
                   setCart={setCart} />} />
-                <Route exact path={`/products/seamless_tape_in`} render={() => <Product
-                  isCategory={isCategory}
-                  setCategory={setCategory}
-                  colors={colors} />}
-                  isColorArr={isSeamlessColor}
-                  setColorArr={setSeamlessColor}
-                  isInitialPrice={isInitialPrice}
-                  isCart={isCart}
-                  setCart={setCart} />  
                 <Route exact path={`/products/invisible_tape_in`} render={() => <Product
                   isCategory={isCategory}
                   setCategory={setCategory}
@@ -135,8 +132,20 @@ function App() {
                   isColorArr={isInvisibleColor}
                   setColorArr={setInvisibleColor}
                   isInitialPrice={isInitialPrice}
+                  productArr={productArr}
                   isCart={isCart}
-                  setCart={setCart} />} />                                                        
+                  setCart={setCart} />} />                   
+                <Route exact path={`/products/seamless_tape_in`} render={() => <Product
+                  isCategory={isCategory}
+                  setCategory={setCategory}
+                  colors={colors}
+                  isColorArr={isSeamlessColor}
+                  setColorArr={setSeamlessColor}
+                  isInitialPrice={isInitialPrice}
+                  productArr={productArr}
+                  isCart={isCart}
+                  setCart={setCart} /> } />
+                                                       
                 <Route component={NoMatch} />
               </Switch>
               <Footer 
