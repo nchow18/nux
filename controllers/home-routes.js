@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
   })
   .then(dbProductData => {
     res.json(dbProductData)
-    res.render('index.html')
+    res.render('index')
   })
   .catch(err => {
     console.log(err);
