@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NoMatch from './pages/NoMatch';
 import Nuxe from './pages/Nuxe';
 import Header from './components/Header/Header';
@@ -102,7 +102,7 @@ function App() {
   }
 
   return (
-        <Router>
+        <BrowserRouter>
             <div className="display-flex-column nuxe-colour page-font">
               <TopDisplay />
               <Header 
@@ -158,7 +158,7 @@ function App() {
               <Footer 
               />
             </div>
-        </Router>
+        </BrowserRouter>
     );
 }
 export default App;
