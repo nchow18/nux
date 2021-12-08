@@ -24,10 +24,17 @@ app.use(session(sess));
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: true }));
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
 
 //turn on routes
 app.use(routes);
+
+app.get("*", (req, res) => {
+  let url = path.join(__dirname, '../client/build', 'index.html');
+  if (!url.startsWith('/app/')) // since we're on local windows
+    url = url.substring(1);
+  res.sendFile(url);
+});
 
 // turn on connection to db and server
 sequelize.sync({ force: false }).then(() => {
