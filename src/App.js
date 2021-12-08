@@ -31,7 +31,16 @@ function App() {
 
   useEffect(() => {
 
-    Axios.get(`http://localhost:3001/api/products`).then((data) => {parseProductArr(data.data)})
+    const checkURL = window.location.href.search('localhost');
+    const heroku = 'https://nuxe-website.herokuapp.com/api/products'
+
+    if (checkURL >= 1) {
+      Axios.get(`http://localhost:3001/api/products`).then((data) => {parseProductArr(data.data)})
+    } else {
+      Axios.get(heroku).then((data) => {parseProductArr(data.data)})
+    }
+
+
 
     setCat()
 
