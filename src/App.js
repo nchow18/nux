@@ -40,8 +40,6 @@ function App() {
       Axios.get(heroku).then((data) => {parseProductArr(data.data)})
     }
 
-
-
     setCat()
 
     function setCat() {

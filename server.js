@@ -24,7 +24,7 @@ app.use(session(sess));
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: true }));
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 //turn on routes
 app.use(routes);
