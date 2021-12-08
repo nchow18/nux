@@ -12,7 +12,10 @@ router.get('/', (req, res) => {
       'colors'
     ]
   })
-  .then(dbProductData => res.json(dbProductData))
+  .then(dbProductData => {
+    res.json(dbProductData)
+    res.render('Products')
+  })
   .catch(err => {
     console.log(err);
     res.status(500).json(err);
