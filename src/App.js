@@ -29,6 +29,12 @@ function App() {
     'Seamless_Tape-In'
   ]
 
+  const catLinks = [
+    'classic_tape_in',
+    'invisible_tape_in',
+    'seamless_tape_in'
+  ]
+
   useEffect(() => {
 
     const checkURL = window.location.href.search('localhost');
@@ -121,6 +127,8 @@ function App() {
                   categories={categories}
                   setInitialPrice={setInitialPrice}
                   isInitialPrice={isInitialPrice}
+                  category={category}
+                  catLinks={catLinks}
                    />} />
                 <Route exact path={`/products/classic_tape_in`} render={() => <Product
                   isCategory={isCategory}

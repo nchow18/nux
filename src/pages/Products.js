@@ -9,6 +9,7 @@ function Products(props) {
     setCategory,
     categories,
     productArr,
+    catLinks,
     setInitialPrice,
     isInitialPrice
   } = props
@@ -18,6 +19,8 @@ function Products(props) {
     return new_name;
   }
 
+  console.log(catLinks);
+
   return (
       <div className="products-container">
         <div className="products-title-container">
@@ -26,7 +29,7 @@ function Products(props) {
         </div>
         <div className="category-container">
           {categories.map((cat, index) => (
-            <NavLink style={{ textDecoration: 'none'}} key={cat} onClick={() => {setCategory((cat.replace('-','_').toLowerCase())); setInitialPrice(productArr[index].Jet_Black.length_18) }} to={`/products/${cat.replace('-','_').toLowerCase()}`}>
+            <NavLink style={{ textDecoration: 'none'}} key={cat} onClick={() => {setCategory((cat.replace('-','_').toLowerCase())); setInitialPrice(productArr[index].Jet_Black.length_18) }} to={`/products/${catLinks[index]}`}>
               <div className="category-column">
                 <img alt="category" src={process.env.PUBLIC_URL + `/images/Products/${cat}.png`} />
                 <div className="category-block"></div>
