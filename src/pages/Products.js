@@ -27,7 +27,7 @@ function Products(props) {
         </div>
         <div className="category-container">
           {categories.map((cat, index) => (
-            <NavLink style={{ textDecoration: 'none'}} key={cat} onClick={() => {setCategory((cat.replace('-','_').toLowerCase())); setInitialPrice(productArr[index].Jet_Black.length_18) }} to={`/products/${catLinks[index]}`}>
+            <NavLink style={{ textDecoration: 'none'}} key={cat} onClick={() => {setCategory((catLinks[index])); setInitialPrice(productArr[index].Jet_Black.length_18) }} to={`/products/${catLinks[index]}`}>
               <div className="category-column">
                 <img alt="category" src={process.env.PUBLIC_URL + `/images/Products/${cat}.png`} />
                 <div className="category-block"></div>

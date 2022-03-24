@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../css/nuxe.css';
+import { NavLink } from 'react-router-dom';
 
 function SectionOne() {
 
@@ -10,9 +11,9 @@ function SectionOne() {
         <div className="font-face-florence">- luxurious -</div>
         <div className="font-face-louis">nuxe.</div>
       </div>
-      <div className="nuxe-button-main">
+      <NavLink style={{ textDecoration: 'none'}} className="nuxe-button-main" to={`/products/`}>
         Shop our collection
-      </div>
+      </NavLink>
     </div>
   )
 }
