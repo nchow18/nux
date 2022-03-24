@@ -19,8 +19,6 @@ function Products(props) {
     return new_name;
   }
 
-  console.log(catLinks);
-
   return (
       <div className="products-container">
         <div className="products-title-container">
